@@ -13,7 +13,7 @@ namespace quizMe.Controllers
         {
             return View();
         }
-        public IActionResult CreateLogin()
+        public IActionResult SignUp()
         {
             return View();
         }
