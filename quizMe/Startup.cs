@@ -22,14 +22,14 @@ namespace quizMe
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Rover}/{action=Home}"
+                    pattern: "{controller=Home}/{action=Home}/{id?}"
                     );
             });
         }
